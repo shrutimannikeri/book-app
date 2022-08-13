@@ -1,0 +1,150 @@
+body {
+  
+    background-color: #212426;
+    font-family: 'Poppins', sans-serif;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+div#booklist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.book {
+    gap: 10px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 0;
+    box-shadow: 0 0 2px 2px #110f0f80;
+    margin: 1em 0;
+    position: relative;
+}
+
+.search {
+    width: 71%;
+    margin: 2rem 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1.75rem;
+    border-radius: 3rem;
+    background: #1f2123;
+    box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+
+input#searchBook {
+    flex: 1 1;
+    border: none;
+    font-size: 1.5rem;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    padding-right: 1rem;
+    outline: none;
+    color: #a1a1a1;
+    background: #1f2123;
+    font-size: 14px;
+}
+button#searchbtn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #f9d3b4;
+}
+h1.title {
+    font-size: 3rem;
+    letter-spacing: 0.9px;
+    background: linear-gradient(
+    90deg,
+    rgba(249, 211, 180, 1) 0%,
+    rgba(249, 211, 180, 0) 100%
+  );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.card-title {
+    margin-bottom: 0.75rem;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #8080801f;
+    padding: 10px;
+    border-left: 10px solid #190958ad;
+    box-shadow: 0 0 2px 2px #80808040;
+}
+h6.card-subtitle.mb-2.text-muted {
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+}
+.p-textsub {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.p-textsub p {
+    width: 401px;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.card-body {
+   
+    padding-bottom: 0 !important;
+}
+p.card-text.Characters {
+    font-size: 14px;
+    margin-bottom: 7px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+i.fa.fa-book,.fa-calendar{
+    font-size: 14px;
+    margin-right: 5px;
+    color: #190958ad;
+}
+p.card-text label {
+    color: #000480ba;
+    font-weight: 700;
+}
+span.card-text-span {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+.card.book:hover {
+    transition: width 2s;
+    border-left: 8px solid #143a3a;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:550px)  {
+   
+    .search {
+        width: 100%;
+        margin: 2rem 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1.75rem;
+        border-radius: 3rem;
+        background: #1f2123;
+        box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+    }
+  }
